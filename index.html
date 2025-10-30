@@ -254,8 +254,9 @@
                     <ol class="hidden md:flex items-center space-x-8 list-none font-mono text-sm">
                         <li><a href="#about" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">01.</span>About</a></li>
                         <li><a href="#experience" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">02.</span>Experience</a></li>
-                        <li><a href="#projects" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">03.</span>Projects</a></li>
-                        <li><a href="#contact" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">04.</span>Contact</a></li>
+                        <li><a href="#education" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">03.</span>Education</a></li>
+                        <li><a href="#projects" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">04.</span>Projects</a></li>
+                        <li><a href="#contact" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">05.</span>Contact me</a></li>
                     </ol>
                     <button id="mobile-menu-button" class="md:hidden text-accent" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open mobile menu">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
@@ -269,8 +270,9 @@
                 <div class="px-6 pb-4 pt-2 flex flex-col space-y-3">
                     <a href="#about" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">01.</span> About</a>
                     <a href="#experience" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">02.</span> Experience</a>
-                    <a href="#projects" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">03.</span> Projects</a>
-                    <a href="#contact" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">04.</span> Contact</a>
+                    <a href="#education" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">03.</span> Education</a>
+                    <a href="#projects" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">04.</span> Projects</a>
+                    <a href="#contact" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">05.</span> Contact me</a>
                     <div class="flex justify-end space-x-6 pt-4">
                         <a href="https://www.linkedin.com/in/jonathanbheri" target="_blank" rel="noopener noreferrer" class="group block">
                             <span class="sr-only">LinkedIn</span>
@@ -484,8 +486,44 @@
                 </div>
             </section>
 
+            <!-- Education Section -->
+            <section id="education" class="py-24 fade-in-section" style="counter-reset: section 2;">
+                <h2 class="section-heading">Education</h2>
+                <div class="flex flex-col md:flex-row min-h-[300px]">
+                    <div class="flex flex-row md:flex-col overflow-x-auto whitespace-nowrap md:overflow-x-visible md:whitespace-normal font-mono text-sm">
+                        <button class="tab-button active" data-tab="csu">MS</button>
+                        <button class="tab-button" data-tab="mgit">B.Tech</button>
+                    </div>
+                    <div id="education-tab-panels-container" class="flex-1 p-1 pt-4 md:p-2 md:pl-8">
+                        <div id="tab-panel-csu" class="tab-panel">
+                            <h3 class="text-xl font-medium font-mono text-lightest-slate">
+                                <span>Electrical and Computer Engineering at Colorado State University</span>
+                                
+                            </h3>
+                            <p class="font-mono text-sm text-light-slate mt-1 mb-5">Graduated in May ’18</p>
+                            <ul class="space-y-3 list-none">
+                                <li class="flex"><span class="text-accent mr-3 mt-1">›</span>Concentration in Robot control and vision</li>
+                                <li class="flex"><span class="text-accent mr-3 mt-1">›</span>Coursework: Machine Learning and adaptive Filtering, Computer vision, Non-linear control systems, Digital signal Processing, Digital image processing, Robot control and simulation, Advanced robotics: Redundancy and Optimization, Bio-inspired robots and Embedded systems</li>
+                            </ul>
+                        </div>
+                        <div id="tab-panel-mgit" class="tab-panel hidden">
+                            <h3 class="text-xl font-medium font-mono text-lightest-slate">
+                                <span>Mechatronics at Mahatma Gandhi Institute of Technology</span>
+                                
+                            </h3>
+                            <p class="font-mono text-sm text-light-slate mt-1 mb-5">Graduated in May ’15</p>
+                            <ul class="space-y-3 list-none">
+                                <li class="flex"><span class="text-accent mr-3 mt-1">›</span>Concentration in Mechanical</li>
+                                <li class="flex"><span class="text-accent mr-3 mt-1">›</span>Coursework: IC applications, Microprocessors and microcontrollers, Control systems, Mechanics of Solids, Production Technology, CAD/CAM (Auto CAD, ANSYS), Dynamics of Robotics and C/C++ programming</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
             <!-- Projects Section -->
-            <section id="projects" class="py-24 fade-in-section" style="counter-reset: section 2;">
+            <section id="projects" class="py-24 fade-in-section" style="counter-reset: section 3;">
                 <h2 class="section-heading">Personal Projects</h2>
                 <div class="carousel-container">
                     <div class="carousel-viewport">
@@ -507,8 +545,8 @@
             </section>
             
             <!-- Contact Section -->
-            <section id="contact" class="py-24 text-center fade-in-section" style="counter-reset: section 3;">
-                <h2 class="text-accent font-mono mb-3 text-lg">04. What's Next?</h2>
+            <section id="contact" class="py-24 text-center fade-in-section" style="counter-reset: section 4;">
+                <h2 class="text-accent font-mono mb-3 text-lg">05. What's Next?</h2>
                 <h3 class="text-4xl md:text-5xl font-bold font-mono text-lightest-slate mb-4">Get In Touch</h3>
                 <p class="text-light-slate max-w-lg mx-auto mb-10 text-base md:text-lg">
                     I'm currently seeking new opportunities and am always open to discussing new projects, creative ideas, or ways to contribute to your vision. My inbox is always open, so please feel free to reach out.
@@ -619,7 +657,7 @@
             }
 
             // --- 4. Experience Tabs ---
-            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabButtons = document.querySelectorAll('#experience .tab-button');
             const tabPanelsContainer = document.getElementById('tab-panels-container');
 
             tabButtons.forEach(button => {
@@ -633,9 +671,31 @@
                     // Simple animation for the panel switch
                     tabPanelsContainer.style.opacity = '0';
                     setTimeout(() => {
-                        document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
+                        document.querySelectorAll('#experience .tab-panel').forEach(p => p.classList.add('hidden'));
                         targetPanel.classList.remove('hidden');
                         tabPanelsContainer.style.opacity = '1';
+                    }, 150);
+                });
+            });
+
+            // --- 4.1. Education Tabs ---
+            const educationTabButtons = document.querySelectorAll('#education .tab-button');
+            const educationTabPanelsContainer = document.getElementById('education-tab-panels-container');
+
+            educationTabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetTab = button.getAttribute('data-tab');
+                    const targetPanel = document.getElementById(`tab-panel-${targetTab}`);
+                    
+                    educationTabButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Simple animation for the panel switch
+                    educationTabPanelsContainer.style.opacity = '0';
+                    setTimeout(() => {
+                        document.querySelectorAll('#education .tab-panel').forEach(p => p.classList.add('hidden'));
+                        targetPanel.classList.remove('hidden');
+                        educationTabPanelsContainer.style.opacity = '1';
                     }, 150);
                 });
             });
