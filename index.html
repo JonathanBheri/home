@@ -151,6 +151,7 @@
         .side-link-container {
             @apply hidden md:flex fixed bottom-0 z-10 flex-col items-center;
         }
+        
         .side-link-container::after {
             @apply content-[''] w-px h-24 bg-light-slate mt-5;
         }
@@ -257,6 +258,14 @@
                         <li><a href="#education" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">03.</span>Education</a></li>
                         <li><a href="#projects" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">04.</span>Projects</a></li>
                         <li><a href="#contact" class="page-link text-lightest-slate hover:text-accent transition-colors duration-300"><span class="text-accent nav-number mr-1.5">05.</span>Contact me</a></li>
+                        <li>
+                            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center text-accent border border-accent rounded px-4 py-2 hover:bg-accent/10 transition-all duration-300" download>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M7.5 12l4.5 4.5m0 0 4.5-4.5M12 3v13.5" />
+                                </svg>
+                                Resume
+                            </a>
+                        </li>
                     </ol>
                     <button id="mobile-menu-button" class="md:hidden text-accent" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open mobile menu">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
@@ -273,6 +282,12 @@
                     <a href="#education" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">03.</span> Education</a>
                     <a href="#projects" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">04.</span> Projects</a>
                     <a href="#contact" class="page-link text-lightest-slate hover:text-accent transition-colors duration-200"><span class="text-accent nav-number mr-1.5">05.</span> Contact me</a>
+                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center text-accent transition-colors duration-200 font-mono" download>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M7.5 12l4.5 4.5m0 0 4.5-4.5M12 3v13.5" />
+                        </svg>
+                        Resume
+                    </a>
                     <div class="flex justify-end space-x-6 pt-4">
                         <a href="https://www.linkedin.com/in/jonathanbheri" target="_blank" rel="noopener noreferrer" class="group block">
                             <span class="sr-only">LinkedIn</span>
